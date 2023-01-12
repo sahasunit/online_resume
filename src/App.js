@@ -1,5 +1,6 @@
 import FeaturePage from "./components/FeaturePage";
 import LandingPage from "./components/LandingPage";
+import WorkExperience from "./components/WorkExperience";
 import background from "./images/second_landing_background.png";
 
 const App = () => {
@@ -11,6 +12,9 @@ const App = () => {
 			<div>
 				<FeaturePage />
 			</div>
+      {/* <div>
+				<WorkExperience />
+			</div> */}
 		</div>
 	);
 };

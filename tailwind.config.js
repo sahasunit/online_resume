@@ -18,6 +18,13 @@ module.exports = {
 			90: "90px",
 			100: "100px",
 		},
+		colors: {
+			'floral-white': '#FFFCF2',
+			'pale-silver': '#CCC5B9',
+			'black-olive': '#403D39',
+			'eerie-black': '#EB5E28',
+			'white': '#FFFFFF'
+		  },
     extend: {},
   },
   plugins: [],
