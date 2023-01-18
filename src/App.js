@@ -1,6 +1,7 @@
 import FeaturePage from "./components/FeaturePage";
 import LandingPage from "./components/LandingPage";
-import WorkExperience from "./components/WorkExperience";
+import WorkExperience from "./components/WorkExperiencePage";
+import TechExpertise from "./components/TechExpertisePage";
 import background from "./images/second_landing_background.png";
 
 const App = () => {
@@ -12,9 +13,10 @@ const App = () => {
 			<div>
 				<FeaturePage />
 			</div>
-      {/* <div>
+      <div>
 				<WorkExperience />
-			</div> */}
+			</div>
+				{/* <TechExpertise /> */}
 		</div>
 	);
 };
