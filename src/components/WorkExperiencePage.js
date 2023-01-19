@@ -52,6 +52,7 @@ const WorkExperience = () => {
       <div class="text-40 font-bold tracking-wide leading-3 py-20 text-center text-floral-white">
         Work Timeline
       </div>
+      <div class="pb-10">
       <Timeline position="alternate">
         {companies.map((company) => (
             <TimelineItem>
@@ -73,6 +74,7 @@ const WorkExperience = () => {
             </TimelineItem>
           ))}
       </Timeline> 
+      </div>
     </div>
   );
 }

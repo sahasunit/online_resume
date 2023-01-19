@@ -23,7 +23,8 @@ module.exports = {
 			'pale-silver': '#CCC5B9',
 			'black-olive': '#403D39',
 			'eerie-black': '#EB5E28',
-			'white': '#FFFFFF'
+			'white': '#FFFFFF',
+			'flame': '#EB5E28',
 		  },
     extend: {},
   },
