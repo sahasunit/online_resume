@@ -4,7 +4,6 @@ import LandingPage from "./components/LandingPage";
 import WorkExperience from "./components/WorkExperiencePage";
 import Footer from "./components/Footer";
 import TechUsed from "./components/TechUsed";
-import background from "./images/second_landing_background.png";
 import ReactFullpage from "@fullpage/react-fullpage";
 
 const App = () => {
@@ -61,21 +60,6 @@ const App = () => {
 
 	return (
 		<div className="App">
-			{/* <div>
-				<LandingPage />
-			</div>
-			<div>
-				<FeaturePage />
-			</div>
-			<div>
-				<WorkExperience />
-			</div>
-			<div>
-				<TechUsed />
-			</div>
-			<div>
-				<Footer />
-			</div> */}
 			<Fullpage />
 		</div>
 	);
