@@ -1,11 +1,29 @@
+import React, { useState, useEffect } from "react";
 import FeaturePage from "./components/FeaturePage";
 import LandingPage from "./components/LandingPage";
-import WorkExperience from "./components/WorkExperience";
+import WorkExperience from "./components/WorkExperiencePage";
+import Footer from "./components/Footer";
 import TechUsed from "./components/TechUsed";
 import background from "./images/second_landing_background.png";
 import ReactFullpage from "@fullpage/react-fullpage";
 
 const App = () => {
+	const [maxWidthViewport, setWindowWidth] = useState(0);
+	const [maxHeightViewport, setWindowHeight] = useState(0);
+	useEffect(() => {
+		updateDimensions();
+
+		window.addEventListener("resize", updateDimensions);
+		return () => window.removeEventListener("resize", updateDimensions);
+	}, []);
+
+	const updateDimensions = () => {
+		const maxWidthViewport = window.innerWidth;
+		const maxHeightViewport = window.innerHeight;
+		setWindowWidth(maxWidthViewport);
+		setWindowHeight(maxHeightViewport);
+	};
+
 	const Fullpage = () => (
 		<ReactFullpage
 			//fullpage options
@@ -15,19 +33,25 @@ const App = () => {
 				return (
 					<ReactFullpage.Wrapper>
 						<div className="section">
-							<LandingPage />
+							<LandingPage
+								maxWidthViewport={maxWidthViewport}
+								maxHeightViewport={maxHeightViewport}
+							/>
 							{/* <button onClick={() => fullpageApi.moveSectionDown()}>
 								Click me to move down
 							</button> */}
 						</div>
 						<div className="section">
-							<FeaturePage />
+							<FeaturePage maxWidthViewport={maxWidthViewport} />
 						</div>
 						<div className="section">
-							<WorkExperience />
+							<WorkExperience maxWidthViewport={maxWidthViewport} />
 						</div>
 						<div className="section">
-							<TechUsed />
+							<TechUsed maxWidthViewport={maxWidthViewport} />
+						</div>
+						<div className="section">
+							<Footer maxWidthViewport={maxWidthViewport} />
 						</div>
 					</ReactFullpage.Wrapper>
 				);
@@ -48,6 +72,9 @@ const App = () => {
 			</div>
 			<div>
 				<TechUsed />
+			</div>
+			<div>
+				<Footer />
 			</div> */}
 			<Fullpage />
 		</div>

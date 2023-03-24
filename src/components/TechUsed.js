@@ -11,55 +11,115 @@ import react from "../images/tech_logos/react.png";
 import redux from "../images/tech_logos/redux.png";
 import restApi from "../images/tech_logos/restApi.png";
 import typescript from "../images/tech_logos/typescript.png";
-import { Carousel } from "3d-react-carousal";
+import nodejs from "../images/tech_logos/nodejs.png";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-const TechUsed = () => {
-	const slides = [
-		<div class="bg-white px-40 py-20">
-			<img width="700" height="800" src={react} alt="React" />
+const TechUsed = ({ maxWidthViewport }) => {
+	console.log({ maxWidthViewport });
+
+	const techImgOuterWrapperStyle =
+		"flex flex-col items-center h-full w-full bg-white p-5";
+	const techImgInnerWrapperStyle =
+		"w-full h-full text-center font-bold px-10 text-26 text-black tracking-wide";
+
+	const techStackImgs = [
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>R E A C T</div>
+			<img class="" width="600" src={react} alt="React" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="800" src={typescript} alt="Typescript" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>T Y P E S C R I P T</div>
+			<img width="600" src={typescript} alt="Typescript" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={java} alt="Java" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>J A V A S C R I P T</div>
+			<img width="600" src={javascript} alt="Javascript" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={javascript} alt="Javascript" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>J A V A</div>
+			<img width="600" src={java} alt="Java" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={cplusplus} alt="Cplusplus" />,
+
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>N O D E J S </div>
+			<img width="600" src={nodejs} alt="NodeJs" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={python} alt="Python" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>C + +</div>
+			<img width="600" src={cplusplus} alt="C++" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={redux} alt="Redux" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>P Y T H O N</div>
+			<img width="600" src={python} alt="Python" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={linux} alt="Linux" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>R E D U X</div>
+			<img width="600" src={redux} alt="Redux" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={restApi} alt="RestApi" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>L I N U X</div>
+			<img width="600" src={linux} alt="Linux" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={jira} alt="Jira" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>R E S T A P I</div>
+			<img width="600" src={restApi} alt="Rest API" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={confluence} alt="Confluence" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>J I R A</div>
+			<img width="600" src={jira} alt="Jira" />
 		</div>,
-		<div class="bg-white p-10">
-			<img width="700" height="200" src={figmaLogo} alt="FigmaLogo" />,
+		<div class={techImgOuterWrapperStyle}>
+			<div class={techImgInnerWrapperStyle}>F I G M A</div>
+			<img width="600" src={figmaLogo} alt="Figma" />
 		</div>,
 	];
 
+	const responsive = {
+		superLargeDesktop: {
+			breakpoint: { max: 4000, min: 3000 },
+			items: 5,
+		},
+		desktop: {
+			breakpoint: { max: 3000, min: 1024 },
+			items: 3,
+		},
+		tablet: {
+			breakpoint: { max: 1024, min: 464 },
+			items: 2,
+		},
+		mobile: {
+			breakpoint: { max: 464, min: 0 },
+			items: 1,
+		},
+	};
+
 	return (
-		<div class="h-screen bg-pale-silver">
-			<div class="tracking-wider leading-4 font-bold text-60 pt-20 pb-20 text-center">
+		<div class="h-screen bg-pale-silver flex flex-col items-center justify-center">
+			<div class="tracking-wider leading-10 font-bold text-40 py-10 text-center">
 				Tech & Skill Expertise
 			</div>
-			<div class="">
-				<Carousel slides={slides} autoplay={true} interval={1000} />
+			<div class={`${maxWidthViewport <= 1024 ? "w-11/12 " : "w-7/12"}`}>
+				<Carousel
+					swipeable={false}
+					draggable={true}
+					showDots={true}
+					responsive={responsive}
+					ssr={true} // means to render carousel on server-side.
+					infinite={true}
+					autoPlay={true}
+					autoPlaySpeed={800}
+					customTransition="all .5"
+					transitionDuration={500}
+					containerClass="carousel-container"
+					removeArrowOnDeviceType={["tablet", "mobile"]}
+					dotListClass="custom-dot-list-style"
+					itemClass="carousel-item-padding-20-px px-2"
+					arrows={false}
+					customTransition="transform 300ms ease-in-out"
+				>
+					{techStackImgs.map((pic) => pic)}
+				</Carousel>
 			</div>
 		</div>
 	);
