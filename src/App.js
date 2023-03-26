@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import FeaturePage from "./components/FeaturePage";
+import AboutMe from "./components/AboutMe";
 import LandingPage from "./components/LandingPage";
 import WorkExperience from "./components/WorkExperiencePage";
 import Footer from "./components/Footer";
 import TechUsed from "./components/TechUsed";
+import ArtworksPage from "./components/ArtworksPage";
 import ReactFullpage from "@fullpage/react-fullpage";
 
 const App = () => {
@@ -41,13 +42,16 @@ const App = () => {
 							</button> */}
 						</div>
 						<div className="section">
-							<FeaturePage maxWidthViewport={maxWidthViewport} />
+							<AboutMe maxWidthViewport={maxWidthViewport} />
 						</div>
 						<div className="section">
 							<WorkExperience maxWidthViewport={maxWidthViewport} />
 						</div>
 						<div className="section">
 							<TechUsed maxWidthViewport={maxWidthViewport} />
+						</div>
+						<div className="section">
+							<ArtworksPage maxWidthViewport={maxWidthViewport} />
 						</div>
 						<div className="section">
 							<Footer maxWidthViewport={maxWidthViewport} />

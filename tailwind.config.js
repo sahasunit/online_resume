@@ -9,6 +9,9 @@ module.exports = {
 			192: "192px",
 			304: "304px",
 			632: "632px",
+			720: "720px",
+			1000: "1000px",
+			1280: "1280px",
 			full: "100%",
 		},
 		maxWidth: {
@@ -121,7 +124,7 @@ module.exports = {
 				"floral-white": "#FFFCF2",
 				"pale-silver": "#CCC5B9",
 				"black-olive": "#403D39",
-				"eerie-black": "#EB5E28",
+				"eerie-black": "#252422",
 				black: "#000000",
 				"navy-blue": "#14213D",
 				"chrome-yellow": "#FCA311",

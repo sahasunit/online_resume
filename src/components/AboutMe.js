@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import sunitPic from "../images/sunit_pic.png";
 
-const FeaturePage = ({ maxWidthViewport }) => {
+const AboutMe = ({ maxWidthViewport }) => {
 	console.log({ maxWidthViewport });
 	return (
 		<div
@@ -91,4 +91,4 @@ const FeaturePage = ({ maxWidthViewport }) => {
 	);
 };
 
-export default FeaturePage;
+export default AboutMe;

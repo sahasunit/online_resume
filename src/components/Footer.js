@@ -9,7 +9,7 @@ const Footer = ({ maxWidthViewport }) => {
 			</div>
 			<div
 				className={`${
-					maxWidthViewport <= 1024 ? "flex-col items-center pt-10" : "pt-20"
+					maxWidthViewport <= 1024 ? "flex-col items-center pt-10" : "pt-10"
 				} flex justify-center`}
 			>
 				<img

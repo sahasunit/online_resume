@@ -82,21 +82,17 @@ const TechUsed = ({ maxWidthViewport }) => {
 		},
 		desktop: {
 			breakpoint: { max: 3000, min: 1024 },
-			items: 3,
-		},
-		tablet: {
-			breakpoint: { max: 1024, min: 464 },
 			items: 2,
 		},
-		mobile: {
-			breakpoint: { max: 464, min: 0 },
+		smallScreen: {
+			breakpoint: { max: 1024, min: 0 },
 			items: 1,
 		},
 	};
 
 	return (
-		<div class="h-screen bg-pale-silver flex flex-col items-center justify-center">
-			<div class="tracking-wider leading-10 font-bold text-40 py-10 text-center">
+		<div class="h-screen bg-chrome-yellow flex flex-col items-center justify-center">
+			<div class="tracking-wider leading-10 font-bold text-40 py-10 text-center text-white">
 				Tech & Skill Expertise
 			</div>
 			<div class={`${maxWidthViewport <= 1024 ? "w-11/12 " : "w-7/12"}`}>
@@ -114,7 +110,7 @@ const TechUsed = ({ maxWidthViewport }) => {
 					containerClass="carousel-container"
 					removeArrowOnDeviceType={["tablet", "mobile"]}
 					dotListClass="custom-dot-list-style"
-					itemClass="carousel-item-padding-20-px px-2"
+					itemClass="carousel-item-padding-20-px px-2 "
 					arrows={false}
 					customTransition="transform 300ms ease-in-out"
 				>
