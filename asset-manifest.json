@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "/online_resume/static/css/main.650c5c11.css",
-    "main.js": "/online_resume/static/js/main.dcd4786f.js",
-    "static/media/sunit_pic.png": "/online_resume/static/media/sunit_pic.78e2ab57516012e11d2a.png",
+    "main.css": "/online_resume/static/css/main.bcdc0a81.css",
+    "main.js": "/online_resume/static/js/main.b4b20deb.js",
+    "static/media/lady.png": "/online_resume/static/media/lady.ca5ace82f24f9758ca5b.png",
+    "static/media/buddha.png": "/online_resume/static/media/buddha.68bc1df4893a4b557b02.png",
+    "static/media/lions.png": "/online_resume/static/media/lions.24cd00ece346e4d9dd64.png",
+    "static/media/ganesh.png": "/online_resume/static/media/ganesh.2f89510698dc02feb881.png",
+    "static/media/sunset.png": "/online_resume/static/media/sunset.e0ca4ce45da6a474935b.png",
+    "static/media/sunitsPic.png": "/online_resume/static/media/sunitsPic.78e2ab57516012e11d2a.png",
     "static/media/react.png": "/online_resume/static/media/react.81ed438b18e24116794d.png",
     "static/media/python.png": "/online_resume/static/media/python.82efb64f8698a267f8bf.png",
     "static/media/linux.png": "/online_resume/static/media/linux.13d109a45ed6b0724b83.png",
@@ -10,7 +15,7 @@
     "static/media/java.png": "/online_resume/static/media/java.fdabd4e11f1235e4e8e0.png",
     "static/media/confluence.png": "/online_resume/static/media/confluence.6a4aa79cfd35fd2c1d39.png",
     "static/media/nodejs.png": "/online_resume/static/media/nodejs.bc4b43cd5f20ba305059.png",
-    "static/media/keep_in_touch.png": "/online_resume/static/media/keep_in_touch.20bbe911334beea17cf3.png",
+    "static/media/keepInTouch.png": "/online_resume/static/media/keepInTouch.20bbe911334beea17cf3.png",
     "static/media/figma.png": "/online_resume/static/media/figma.46400ab8543f71a3650b.png",
     "static/media/restApi.png": "/online_resume/static/media/restApi.8914f5cf80f8372858a4.png",
     "static/media/redux.png": "/online_resume/static/media/redux.b3b939c66aecf7d53967.png",
@@ -19,11 +24,11 @@
     "static/media/javascript.png": "/online_resume/static/media/javascript.266bd9fb2663dcc057b4.png",
     "static/media/revicons.woff": "/online_resume/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/online_resume/index.html",
-    "main.650c5c11.css.map": "/online_resume/static/css/main.650c5c11.css.map",
-    "main.dcd4786f.js.map": "/online_resume/static/js/main.dcd4786f.js.map"
+    "main.bcdc0a81.css.map": "/online_resume/static/css/main.bcdc0a81.css.map",
+    "main.b4b20deb.js.map": "/online_resume/static/js/main.b4b20deb.js.map"
   },
   "entrypoints": [
-    "static/css/main.650c5c11.css",
-    "static/js/main.dcd4786f.js"
+    "static/css/main.bcdc0a81.css",
+    "static/js/main.b4b20deb.js"
   ]
 }
