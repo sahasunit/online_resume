@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../images/second_landing_background.png";
+import background from "../images/landingBackground.png";
 import AnimatedText from "react-animated-text-content";
 
 const LandingPage = ({ maxWidthViewport }) => {

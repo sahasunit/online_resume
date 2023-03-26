@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import sunitPic from "../images/sunit_pic.png";
+import sunitPic from "../images/sunitsPic.png";
 
 const AboutMe = ({ maxWidthViewport }) => {
 	console.log({ maxWidthViewport });

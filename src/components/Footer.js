@@ -1,5 +1,5 @@
 import React from "react";
-import KeepInTouch from "../images/keep_in_touch.png";
+import KeepInTouch from "../images/keepInTouch.png";
 
 const Footer = ({ maxWidthViewport }) => {
 	return (
