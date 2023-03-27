@@ -3,11 +3,10 @@ import { TypeAnimation } from "react-type-animation";
 import sunitPic from "../images/sunitsPic.png";
 
 const AboutMe = ({ maxWidthViewport }) => {
-	console.log({ maxWidthViewport });
 	return (
 		<div
 			class={`${
-				maxWidthViewport <= 1024 ? "py-10" : "h-screen"
+				maxWidthViewport <= 1024 ? "h-screen" : "h-screen"
 			} flex flex-col bg-floral-white relative justify-center items-center`}
 		>
 			<div class="text-40 text-center font-bold text-black pb-10">About Me</div>
@@ -19,13 +18,17 @@ const AboutMe = ({ maxWidthViewport }) => {
 				}`}
 			>
 				<img
-					class={`${maxWidthViewport <= 1024 ? "w-9/12 pb-5" : "w-4/12"}`}
 					src={sunitPic}
 					alt="Sunit's"
+					width={`${
+						maxWidthViewport <= 1024
+							? maxWidthViewport / 2
+							: maxWidthViewport / 4
+					}`}
 				/>
 				<div
 					class={`${
-						maxWidthViewport <= 1024 ? "w-11/12" : "w-7/12 pl-5"
+						maxWidthViewport <= 1024 ? "w-8/12 text-center" : "w-7/12 pl-5"
 					} flex flex-col pt-5`}
 				>
 					<h1 class="font-bold leading-3 text-black text-20 pb-2">
