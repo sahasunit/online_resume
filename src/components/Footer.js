@@ -16,9 +16,9 @@ const Footer = ({ maxWidthViewport }) => {
 					class="rounded-full"
 					src={KeepInTouch}
 					alt="Keep in touch."
-					width={`${maxWidthViewport <= 1024 ? "320" : "450"}`}
+					width={`${maxWidthViewport <= 464 ? "320" : "450"}`}
 				/>
-				<div class={`${maxWidthViewport <= 1024 ? "w-11/12" : ""}`}>
+				<div class={`${maxWidthViewport <= 464 ? "w-11/12" : ""}`}>
 					<div className="text-center text-white text-24 font-bold p-5">
 						Get in touch to grab a beer? Coffee?
 					</div>
@@ -27,7 +27,6 @@ const Footer = ({ maxWidthViewport }) => {
 							If you have a project that's been haunting you like a poltergeist
 							or a goal that's been eluding you like Waldo, drop me a line at
 							<span className="font-bold text-white">
-								{" "}
 								sahasunit05@gmail.com
 							</span>
 							. I'm always happy to chat about how to bring your ideas to life,
