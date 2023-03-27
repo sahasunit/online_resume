@@ -1,7 +1,7 @@
 {
   "name": "online_resume",
   "version": "0.1.0",
-  "homepage": "https://sahasunit.github.io/online_resume",
+  "homepage": "https://sahasunit.github.io/",
   "private": true,
   "dependencies": {
     "3d-react-carousal": "^5.0.0",
