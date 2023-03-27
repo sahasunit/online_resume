@@ -6,8 +6,8 @@ const AboutMe = ({ maxWidthViewport }) => {
 	return (
 		<div
 			class={`${
-				maxWidthViewport <= 1024 ? "h-screen" : "h-screen"
-			} flex flex-col bg-floral-white relative justify-center items-center`}
+				maxWidthViewport <= 464 ? "py-5" : "h-screen"
+			} flex flex-col bg-floral-white justify-center items-center relative`}
 		>
 			<div class="text-40 text-center font-bold text-black pb-10">About Me</div>
 			<div
@@ -34,7 +34,7 @@ const AboutMe = ({ maxWidthViewport }) => {
 					<h1 class="font-bold leading-3 text-black text-20 pb-2">
 						My name is Sunit Saha.
 					</h1>
-					<div class="">
+					<div class={`${maxWidthViewport <= 464 ? "py-2" : ""}`}>
 						<TypeAnimation
 							sequence={[
 								"I’m interested in Softwares 💻", // Types 'One'
@@ -60,7 +60,12 @@ const AboutMe = ({ maxWidthViewport }) => {
 							speed={60}
 						/>
 					</div>
-					<div class="text-black tracking-wider leading-4 text-14">
+
+					<div
+						class={`${
+							maxWidthViewport <= 464 ? "text-12" : "text-14"
+						} text-black tracking-wider leading-4 text-14`}
+					>
 						<p class="py-2" align="justify">
 							I have nearly three years of experience working as a software
 							engineer, with a focus on React, TypeScript, JavaScript, and Java.
