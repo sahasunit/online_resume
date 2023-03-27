@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/online_resume/static/css/main.bcdc0a81.css",
-    "main.js": "/online_resume/static/js/main.b4b20deb.js",
+    "main.css": "/online_resume/static/css/main.ea3d911e.css",
+    "main.js": "/online_resume/static/js/main.273b4aa4.js",
     "static/media/lady.png": "/online_resume/static/media/lady.ca5ace82f24f9758ca5b.png",
     "static/media/buddha.png": "/online_resume/static/media/buddha.68bc1df4893a4b557b02.png",
     "static/media/lions.png": "/online_resume/static/media/lions.24cd00ece346e4d9dd64.png",
@@ -13,7 +13,6 @@
     "static/media/linux.png": "/online_resume/static/media/linux.13d109a45ed6b0724b83.png",
     "static/media/cplusplus.png": "/online_resume/static/media/cplusplus.64f637357bce0ccc8384.png",
     "static/media/java.png": "/online_resume/static/media/java.fdabd4e11f1235e4e8e0.png",
-    "static/media/confluence.png": "/online_resume/static/media/confluence.6a4aa79cfd35fd2c1d39.png",
     "static/media/nodejs.png": "/online_resume/static/media/nodejs.bc4b43cd5f20ba305059.png",
     "static/media/keepInTouch.png": "/online_resume/static/media/keepInTouch.20bbe911334beea17cf3.png",
     "static/media/figma.png": "/online_resume/static/media/figma.46400ab8543f71a3650b.png",
@@ -24,11 +23,11 @@
     "static/media/javascript.png": "/online_resume/static/media/javascript.266bd9fb2663dcc057b4.png",
     "static/media/revicons.woff": "/online_resume/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/online_resume/index.html",
-    "main.bcdc0a81.css.map": "/online_resume/static/css/main.bcdc0a81.css.map",
-    "main.b4b20deb.js.map": "/online_resume/static/js/main.b4b20deb.js.map"
+    "main.ea3d911e.css.map": "/online_resume/static/css/main.ea3d911e.css.map",
+    "main.273b4aa4.js.map": "/online_resume/static/js/main.273b4aa4.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcdc0a81.css",
-    "static/js/main.b4b20deb.js"
+    "static/css/main.ea3d911e.css",
+    "static/js/main.273b4aa4.js"
   ]
 }
