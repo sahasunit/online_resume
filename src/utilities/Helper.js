@@ -27,35 +27,35 @@ const techImgInnerWrapperStyle =
 	"w-full h-full text-center font-bold px-10 text-26 text-black tracking-wide";
 
 export const artworkStore = ({ maxWidthViewport }) => [
-	<div class={artworkWrapperStyle}>
+	<div class={artworkWrapperStyle} id={1}>
 		<img
 			width={`${maxWidthViewport >= 1024 ? maxWidthViewport / 2.5 : ""}`}
 			src={buddhaPainting}
 			alt="Buddha Painting"
 		/>
 	</div>,
-	<div class={artworkWrapperStyle}>
+	<div class={artworkWrapperStyle} id={2}>
 		<img
 			width={`${maxWidthViewport >= 1024 ? maxWidthViewport / 2.5 : ""}`}
 			src={ganeshPainting}
 			alt="Ganesh Painting"
 		/>
 	</div>,
-	<div class={artworkWrapperStyle}>
+	<div class={artworkWrapperStyle} id={3}>
 		<img
 			width={`${maxWidthViewport >= 1024 ? maxWidthViewport / 2.5 : ""}`}
 			src={ladyPainting}
 			alt="Lady Painting"
 		/>
 	</div>,
-	<div class={artworkWrapperStyle}>
+	<div class={artworkWrapperStyle} id={4}>
 		<img
 			width={`${maxWidthViewport >= 1024 ? maxWidthViewport / 2.5 : ""}`}
 			src={lionsPainting}
 			alt="Lions Painting"
 		/>
 	</div>,
-	<div class={artworkWrapperStyle}>
+	<div class={artworkWrapperStyle} id={5}>
 		<img
 			width={`${maxWidthViewport >= 1024 ? maxWidthViewport / 2.5 : ""}`}
 			src={sunsetPainting}
@@ -164,11 +164,11 @@ export const responsive = {
 		items: 3,
 	},
 	tablet: {
-		breakpoint: { max: 1024, min: 464 },
+		breakpoint: { max: 1024, min: 768 },
 		items: 2,
 	},
 	mobile: {
-		breakpoint: { max: 464, min: 0 },
+		breakpoint: { max: 767, min: 0 },
 		items: 1,
 	},
 };
